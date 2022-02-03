@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+        height: 800px;
+        width: 100%;
+       
+        margin:0;
+        background-color: #3d4366;
+        background-image: linear-gradient(black 0%, #3d4366 25%, #3d4366 75%, black 100%);
+        
+    
+    .container{
+        color: white;
+        margin:0;
+        padding-top: 200px;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+}

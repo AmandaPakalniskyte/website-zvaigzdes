@@ -173,9 +173,12 @@ header {
                         color: #fff;
                         opacity: 0.6;
                         transition: 0.3s ease-in-out;
+                        cursor: url("../images/light-small.png"), auto;
 
                         &:hover {
                             opacity: 1;
+                            cursor: url("../images/light-small.png"), auto;
+                            transform: scale(2);
                         }
                         
                     }
@@ -187,3 +190,7 @@ header {
     }
 }
 
+// .happy {
+//   cursor: url("../images/light-small.png"), auto;
+  
+// }
