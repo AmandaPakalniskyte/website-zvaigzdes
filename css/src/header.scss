@@ -3,9 +3,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+
+    
+    
     background-color: #3d4366;
     font-weight: bold;
     z-index: 999;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
 
     @media (max-width: 800px) {
         padding: 10px 0;
@@ -17,6 +24,7 @@ header {
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin: 0;
         // margin-bottom: 2px;
 
 
