@@ -129,3 +129,20 @@ for(let i=0; i<btn.length; i++) {
   };
 };
 
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "hola";
+};
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "me";
+};
+
+function myFunction3() {
+  document.getElementById("demo").innerHTML = "llamo";
+};
+function myFunction4() {
+  document.getElementById("demo").innerHTML = "Amanda";
+};
+function myFunction5() {
+  document.getElementById("demo").innerHTML = "Pakalniskyte";
+}
+
