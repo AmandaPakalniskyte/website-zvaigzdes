@@ -22,7 +22,7 @@
         
     }
 
-    .container {
+    .container1 {
         display: flex;
         justify-content: space-between;
         height: 80%;
@@ -75,52 +75,63 @@
 
               }
         }
-            
-
-        .selection-bar {
-            color: white;
-            
-            .active {
-                transform: scale(1.5);
-                font-weight: bold;
-            }
-            
-
-            ul {
-                padding-left: 0;
-                text-align: center;
-            }
-            
-            
-            
-            li {
-                cursor: pointer;
-                list-style: none;
-                margin-bottom: 30px;
 
 
-                input {
-                    border:none;
-                    color: white;
-                    background-color: transparent;
-                    cursor: pointer;
-                    font-family: Poiret One, Helvetica, sans-serif;
-                    font-size: 16px;
-                }
+            
 
-                &:hover {
-                    transform: scale(1.5);
+        // .selection-bar {
+        //     color: white;
+        //     display: flex;
+        //     flex-direction: column;
+        //     width: 100px;
+            
+        //     .active {
+        //         transform: scale(2);
+        //         font-weight: bold;
+        //         text-decoration: underline;
+                
+        //     }
+            
+
+        //     ul {
+        //         padding-left: 0;
+        //         text-align: center;
+        //     }
+            
+            
+            
+        //     li {
+        //         cursor: pointer;
+        //         list-style: none;
+        //         margin-bottom: 30px;
+
+                
+
+                
+
+
+        //         input {
+        //             border:none;
+        //             color: white;
+        //             background-color: transparent;
+        //             cursor: pointer;
+        //             font-family: Poiret One, Helvetica, sans-serif;
+        //             font-size: 20px;
                     
-                }
+        //         }
 
-                .active {
-                    color:blue;
-                }
-            }
-        }
+        //         &:hover {
+        //             transform: scale(2);
+                    
+        //         }
+
+                
+        //     }
+        // }
     }
     
 }
+
 
 
 
