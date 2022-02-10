@@ -47,65 +47,128 @@ window.addEventListener("scroll", () => {
 
 
 
-var div1 = document.getElementById('Div1'),
-    div2 = document.getElementById('Div2'),
-    div3 = document.getElementById('Div3'),
-    div4 = document.getElementById('Div4');
-function switchVisible() {
-  if(!div1) return;
-  if (getComputedStyle(div1).display == 'block') {
-    div1.style.display = 'none';
-    div2.style.display = 'block';
-    // div3.style.display = 'block';
-    // div4.style.display = 'block';
-  } else {
-    div1.style.display = 'block';
-    div2.style.display = 'none';
-    // div3.style.display = 'none';
-    // div4.style.display = 'none';
-  }
-}
-document.getElementById('Button1').addEventListener('click', switchVisible);
-
-
-
-
+// var div1 = document.getElementById('Div1'),
+//     div2 = document.getElementById('Div2'),
+//     div3 = document.getElementById('Div3'),
+//     div4 = document.getElementById('Div4');
 // function switchVisible() {
-//   if(!div2) return;
-//   if (getComputedStyle(div2).display == 'block') {
-//     // div1.style.display = 'block';
+//   if(!div1) return;
+//   if (getComputedStyle(div1).display == 'block') {
+//     div1.style.display = 'none';
 //     div2.style.display = 'block';
 //     // div3.style.display = 'block';
 //     // div4.style.display = 'block';
 //   } else {
-//     div1.style.display = 'none';
-//     div2.style.display = 'block';
+//     div1.style.display = 'block';
+//     div2.style.display = 'none';
 //     // div3.style.display = 'none';
 //     // div4.style.display = 'none';
 //   }
 // }
-// document.getElementById('Button2').addEventListener('click', switchVisible);
+// document.getElementById('Button1').addEventListener('click', switchVisible);
 
 
 
 
-// function switchVisible() {
-//   if(!div3) return;
-//   if (getComputedStyle(div3).display == 'block') {
-//     div1.style.display = 'block';
-//     div2.style.display = 'block';
-//     div3.style.display = 'none';
-//     div4.style.display = 'block';
-//   } else {
-//     div1.style.display = 'none';
-//     div2.style.display = 'none';
-//     div3.style.display = 'block';
-//     div4.style.display = 'none';
-//   }
+
+
+
+
+
+
+
+
+// function myFunction1() {
+//   document.getElementById("demo").innerHTML = "hola";
+// };
+// function myFunction2() {
+//   document.getElementById("demo").innerHTML = "me";
+// };
+
+// function myFunction3() {
+//   document.getElementById("demo").innerHTML = "llamo";
+// };
+// function myFunction4() {
+//   document.getElementById("demo").innerHTML = "Amanda";
+// };
+// function myFunction5() {
+//   document.getElementById("demo").innerHTML = "Pakalniskyte";
 // }
-// document.getElementById('Button3').addEventListener('click', switchVisible);
 
 
+function myFunction() {
+  var element = document.getElementById("myDIV");
+  element.classList.remove("mystyle");
+  element.classList.add("mystyle2");
+    
+  make_it_invisible("myDIV2"); 
+  make_it_invisible("myDIV3"); 
+  make_it_invisible("myDIV4"); 
+  make_it_invisible("myDIV5"); 
+
+  
+};
+
+
+function myFunction2() {
+  var element = document.getElementById("myDIV2");
+  element.classList.remove("mystyle");
+  element.classList.add("mystyle2");
+  
+  make_it_invisible("myDIV"); 
+  make_it_invisible("myDIV3"); 
+  make_it_invisible("myDIV4"); 
+  make_it_invisible("myDIV5"); 
+  
+};
+
+
+
+function myFunction3() {
+  var element = document.getElementById("myDIV3");
+  element.classList.remove("mystyle");
+  element.classList.add("mystyle2");
+  
+  make_it_invisible("myDIV"); 
+  make_it_invisible("myDIV2"); 
+  make_it_invisible("myDIV4"); 
+  make_it_invisible("myDIV5"); 
+  
+}
+
+
+function myFunction4() {
+  var element = document.getElementById("myDIV4");
+  element.classList.remove("mystyle");
+  element.classList.add("mystyle2");
+  
+  make_it_invisible("myDIV"); 
+  make_it_invisible("myDIV2"); 
+  make_it_invisible("myDIV3"); 
+  make_it_invisible("myDIV5"); 
+  
+}
+
+
+function myFunction5() {
+  var element = document.getElementById("myDIV5");
+  element.classList.remove("mystyle");
+  element.classList.add("mystyle2");
+  
+  make_it_invisible("myDIV"); 
+  make_it_invisible("myDIV2"); 
+  make_it_invisible("myDIV3"); 
+  make_it_invisible("myDIV4"); 
+  
+}
+
+
+function make_it_invisible(someDiv){
+  var el = document.getElementById(someDiv);
+  el.classList.remove("mystyle2");
+  el.classList.add("mystyle");
+  
+};
 
 
 
@@ -115,9 +178,13 @@ document.getElementById('Button1').addEventListener('click', switchVisible);
 var btn = document.getElementsByClassName("btn");
 var gallery = document.getElementById("gallery");
 var images = new Array(
-  "../images/star.png",
-  "../images/circle.png",
-  "../images/fire.png"
+  "../images/cancer.png",
+  "../images/solar.png",
+  "../images/calendar.png",
+  "../images/harmony.png",
+  "../images/world.png",
+  
+
 );
 
 for(let i=0; i<btn.length; i++) {
@@ -129,20 +196,7 @@ for(let i=0; i<btn.length; i++) {
   };
 };
 
-function myFunction1() {
-  document.getElementById("demo").innerHTML = "hola";
-};
-function myFunction2() {
-  document.getElementById("demo").innerHTML = "me";
-};
 
-function myFunction3() {
-  document.getElementById("demo").innerHTML = "llamo";
-};
-function myFunction4() {
-  document.getElementById("demo").innerHTML = "Amanda";
-};
-function myFunction5() {
-  document.getElementById("demo").innerHTML = "Pakalniskyte";
-}
+
+
 
