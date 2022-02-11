@@ -49,8 +49,8 @@
 
 
             &:nth-of-type(2) {
-                width: 50px;
-                height: 50px;
+                width: 20px;
+                height: 20px;
                 border:none;
             }
 
@@ -92,53 +92,67 @@
         position:relative;
         top:80px;
         // left:500px;
-        width: 50px;
-        height: 50px;
-        background: url("/images/comet.png") repeat-x;
-        animation-name: prop-600;
-        animation-duration: 4s;
-        background-repeat: no-repeat;
-        background-position: center;
+        width: 20px;
+        height: 20px;
+        background: url("/images/small-star.png");
+        animation: fadeIn ease-in-out 5s;
         animation-iteration-count: infinite;
         
     }
-    @keyframes prop-600 {
-        0% {
-            transform: translateY(-400px);
-            opacity: 0;
-        }
-        5% {
-            opacity:0;
-        } 
-
-        10% {
-            opacity:0;
-        } 
+    // @keyframes prop-600 {
+    //     0% {
+    //         transform: translateY(-40px);
+    //         opacity: 0;
         
-        20% {
-            opacity:1;
-        } 
+        // 5% {
+        //     opacity:0;
+        // } 
 
-        50% {
-            opacity:1;
-        } 
-
-        93% {
-            opacity:0;
-        }
+        // 10% {
+        //     opacity:0;
+        // } 
         
-        94% {
-            opacity:0;
-        }
+        // 20% {
+        //     opacity:1;
+        // } 
 
-        
-        
-        100% {
-            transform: translateY(400px);
-            opacity:0;
-        }
-    }
+        // 50% {
+        //     opacity:1;
+        // } 
 
+        // 93% {
+        //     opacity:0;
+        // }
+        
+        // 94% {
+        //     opacity:0;
+        // }
+
+        // 20% {
+        //     transform: scale(1) rotate(45deg);
+        //     opacity: 1;
+        // }
+        
+    //     100% {
+    //         transform: translateY(-40px);
+    //         opacity:1;
+    //     }
+    // }
+
+    // @keyframes fadeIn {
+    //     0% {
+    //       opacity:0;
+    //     }
+    //     100% {
+    //       opacity:1;
+    //     }
+    //   }
+
+      @keyframes fadeIn {
+        0%,100% { opacity: 0 }
+        50% { opacity: 1;
+            transform: rotate(25deg) }
+      }
 
     
             
