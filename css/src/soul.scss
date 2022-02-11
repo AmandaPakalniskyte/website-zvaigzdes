@@ -95,7 +95,8 @@
         width: 20px;
         height: 20px;
         background: url("/images/small-star.png");
-        animation: fadeIn ease-in-out 5s;
+        animation: fadeIn2gulp
+         ease-in-out 5s;
         animation-iteration-count: infinite;
         
     }
@@ -148,7 +149,7 @@
     //     }
     //   }
 
-      @keyframes fadeIn {
+      @keyframes fadeIn2 {
         0%,100% { opacity: 0 }
         50% { opacity: 1;
             transform: rotate(25deg) }
