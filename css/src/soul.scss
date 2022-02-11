@@ -40,9 +40,21 @@
             text-align: left;
             flex-direction: column;
 
+            
+
+            
+
+            
+
+
+
             &:nth-of-type(2) {
-                width: 100px;
+                width: 50px;
+                height: 50px;
+                border:none;
             }
+
+            
 
             &:last-of-type {
                 text-align: right;
@@ -52,11 +64,90 @@
                 padding-bottom:20px;
                 font-size: 25px;
                 font-weight:bold;
+                
+
+                
+
+                    
+                
+            
+
             }
+
+           
 
             
 
         }
+
+       
+    }
         
     }
-}    
+
+    
+
+
+    .horizon {
+        position:relative;
+        top:80px;
+        // left:500px;
+        width: 50px;
+        height: 50px;
+        background: url("/images/comet.png") repeat-x;
+        animation-name: prop-600;
+        animation-duration: 4s;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes prop-600 {
+        0% {
+            transform: translateY(-400px);
+            opacity: 0;
+        }
+        5% {
+            opacity:0;
+        } 
+
+        10% {
+            opacity:0;
+        } 
+        
+        20% {
+            opacity:1;
+        } 
+
+        50% {
+            opacity:1;
+        } 
+
+        93% {
+            opacity:0;
+        }
+        
+        94% {
+            opacity:0;
+        }
+
+        
+        
+        100% {
+            transform: translateY(400px);
+            opacity:0;
+        }
+    }
+
+
+    
+            
+
+
+
+
+
+
+
+  
+  
